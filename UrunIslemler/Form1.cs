@@ -20,6 +20,7 @@ namespace UrunIslemler
         urun u = new urun();
         private void button1_Click(object sender, EventArgs e)
         {
+            //Değişkenleri halletme
             u.urunno = textBox1.Text;
             u.uruncesiti = textBox2.Text;
             u.kategori = textBox3.Text;
@@ -32,11 +33,13 @@ namespace UrunIslemler
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Bakiye yazdırma
             u.bakiye();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //Label para yazdırma
             label6.Text = ("Para miktarınız :"+ u.para.ToString());
         }
     }
